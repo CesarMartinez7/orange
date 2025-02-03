@@ -1,5 +1,4 @@
 
-
 // function draw () {
     
 //     const canvas = document.getElementById("canvas")
@@ -114,7 +113,7 @@ function update() {
             
             // Snake eats own body
             gameOver = true;
-            alert("Game Over");
+            window.alert("Game Over");
         }
     }
 }
@@ -148,7 +147,7 @@ function changeDirection(e) {
 const tryAgain = document.getElementById("try")
 
 tryAgain.addEventListener("click",() => {
-    gameOver = false
+    location.reload()
 })
 
 // Randomly place food
